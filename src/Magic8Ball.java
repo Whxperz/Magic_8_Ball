@@ -38,37 +38,37 @@ public class Magic8Ball {
 
         System.out.println("Pick a number between 1 and 100");
         number = keyboard.nextInt();
-        if(firstNumber<=number){
+        if(firstNumber>=number){
             System.out.println(fourthResponse);
         }
-        else if(secondNumber<=number) {
+        else if(secondNumber>=number) {
             System.out.println(secondResponse);
         }
-        else if(thirdNumber<=number) {
+        else if(thirdNumber>=number) {
             System.out.println(thirdResponse);
         }
-        else if(fourthNumber<=number) {
+        else if(fourthNumber>=number) {
             System.out.println(firstResponse);
         }
-        else if(fifthNumber<=number) {
+        else if(fifthNumber>=number) {
             System.out.println(eighthResponse);
         }
-        else if(sixthNumber<=number) {
+        else if(sixthNumber>=number) {
             System.out.println(fifthResponse);
         }
-        else if(seventhNumber<=number) {
+        else if(seventhNumber>=number) {
             System.out.println(sixthResponse);
         }
-        else if(eighthNumber<=number) {
+        else if(eighthNumber>=number) {
             System.out.println(ninthResponse);
         }
-        else if(ninthNumber<=number) {
+        else if(ninthNumber>=number) {
             System.out.println(tenthResponse);
         }
-        else if(tenthNumber<=number) {
+        else if(tenthNumber>=number) {
             System.out.println(secondResponse);
         }
-        else if(eleventhNumber<=number) {
+        else if(eleventhNumber>=number) {
             System.out.println(seventhResponse);
         }
     }
