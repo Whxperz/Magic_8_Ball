@@ -3,13 +3,13 @@ import java.util.Scanner;
 public class Magic8Ball {
 
     public static void main(String[]args){
-            Scanner keyboard;
-            keyboard = new Scanner(System.in);
-   //Responses
+        Scanner keyboard;
+        keyboard = new Scanner(System.in);
+        //Responses
 
         String firstResponse = "Most likely";
         String secondResponse = "Outlook good";
-        String thirdResponse = "Without a doubt";
+        String thirdResponse = "Without a doubt";1
         String fourthResponse = "Yes";
         String fifthResponse = "It is certain";
         String sixthResponse = "My reply is no";
@@ -18,57 +18,42 @@ public class Magic8Ball {
         String ninthResponse = "My sources say no";
         String tenthResponse = "Doubtful";
 
-  //Integers
+        //Integers
 
         int number;
-        int firstNumber = 1;
-        int secondNumber = 11;
-        int thirdNumber = 21;
-        int fourthNumber = 31;
-        int fifthNumber = 41;
-        int sixthNumber = 51;
-        int seventhNumber = 61;
-        int eighthNumber = 71;
-        int ninthNumber = 81;
-        int tenthNumber = 91;
-        int eleventhNumber = 100;
 
-
-   //Magic 8 Ball
+        //Magic 8 Ball
 
         System.out.println("Pick a number between 1 and 100");
         number = keyboard.nextInt();
-        if(firstNumber>=number){
+        if(number > 0 && number <=10 ) {
             System.out.println(fourthResponse);
         }
-        else if(secondNumber>=number) {
+        else if(number > 10 && number <=20 )  {
             System.out.println(secondResponse);
         }
-        else if(thirdNumber>=number) {
+        else if(number > 20 && number <= 30 )  {
             System.out.println(thirdResponse);
         }
-        else if(fourthNumber>=number) {
+        else if(number > 30 && number <= 40 ) {
             System.out.println(firstResponse);
         }
-        else if(fifthNumber>=number) {
+        else if(number > 40 && number <= 50  ) {
             System.out.println(eighthResponse);
         }
-        else if(sixthNumber>=number) {
+        else if(number > 50 && number <= 60 ) {
             System.out.println(fifthResponse);
         }
-        else if(seventhNumber>=number) {
+        else if(number > 60 && number <= 70 )  {
             System.out.println(sixthResponse);
         }
-        else if(eighthNumber>=number) {
+        else if(number > 70 && number <= 80 )  {
             System.out.println(ninthResponse);
         }
-        else if(ninthNumber>=number) {
+        else if(number > 80 && number <= 90 )  {
             System.out.println(tenthResponse);
         }
-        else if(tenthNumber>=number) {
-            System.out.println(secondResponse);
-        }
-        else if(eleventhNumber>=number) {
+        else if(number > 90 && number <=100  ) {
             System.out.println(seventhResponse);
         }
     }
