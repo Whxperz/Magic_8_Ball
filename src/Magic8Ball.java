@@ -9,7 +9,7 @@ public class Magic8Ball {
 
         String firstResponse = "Most likely";
         String secondResponse = "Outlook good";
-        String thirdResponse = "Without a doubt";1
+        String thirdResponse = "Without a doubt";
         String fourthResponse = "Yes";
         String fifthResponse = "It is certain";
         String sixthResponse = "My reply is no";
