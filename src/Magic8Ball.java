@@ -1,60 +1,32 @@
 import java.util.Scanner;
+import java.util.Random;
 
 public class Magic8Ball {
 
-    public static void main(String[]args){
+    public static void main(String[]args) {
         Scanner keyboard;
         keyboard = new Scanner(System.in);
         //Responses
 
-        String firstResponse = "Most likely";
-        String secondResponse = "Outlook good";
-        String thirdResponse = "Without a doubt";
-        String fourthResponse = "Yes";
-        String fifthResponse = "It is certain";
-        String sixthResponse = "My reply is no";
-        String seventhResponse = "Don't count on it";
-        String eighthResponse = "Outlook not so good";
-        String ninthResponse = "My sources say no";
-        String tenthResponse = "Doubtful";
+        String[] responses = {"Most likely", "Outlook good", "Without a doubt",
+                "Yes", "It is certain", "My reply is no", "Don't count on it", "Outlook not so good",
+                "My sources say no", "Doubtful"};
 
         //Integers
 
-        int number;
-
+        int random_pickup;
+        Random rand_new = new Random();
+        int arrayLength = responses.length;
+        String cont;
         //Magic 8 Ball
-
-        System.out.println("Pick a number between 1 and 100");
-        number = keyboard.nextInt();
-        if(number > 0 && number <=10 ) {
-            System.out.println(fourthResponse);
+        do {
+            System.out.println("Ask a question");
+            String question = keyboard.nextLine();
+            random_pickup = rand_new.nextInt(arrayLength) +1;
+          //  System.out.println("random_pickup" + random_pickup);
+            System.out.println(responses[random_pickup]);
+            System.out.println("Do you want to play again Yes/No?");
+            cont = keyboard.nextLine();
+            } while (cont.equalsIgnoreCase("Yes"));
         }
-        else if(number > 10 && number <=20 )  {
-            System.out.println(secondResponse);
-        }
-        else if(number > 20 && number <= 30 )  {
-            System.out.println(thirdResponse);
-        }
-        else if(number > 30 && number <= 40 ) {
-            System.out.println(firstResponse);
-        }
-        else if(number > 40 && number <= 50  ) {
-            System.out.println(eighthResponse);
-        }
-        else if(number > 50 && number <= 60 ) {
-            System.out.println(fifthResponse);
-        }
-        else if(number > 60 && number <= 70 )  {
-            System.out.println(sixthResponse);
-        }
-        else if(number > 70 && number <= 80 )  {
-            System.out.println(ninthResponse);
-        }
-        else if(number > 80 && number <= 90 )  {
-            System.out.println(tenthResponse);
-        }
-        else if(number > 90 && number <=100  ) {
-            System.out.println(seventhResponse);
-        }
-    }
 }
